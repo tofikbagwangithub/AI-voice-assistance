@@ -22,19 +22,19 @@ const App = () => {
       speak(message)
       window.open("https://www.whattsapp.com","_blank")
     }
-    if(command.includes("open Instagram")){
-      const message = "Opening instagram"
+    else if(command.includes("open Instagram")){
+      const message = "Opening Instagram"
       setResponse(message)
       speak(message)
-      window.open("https://www.instagram.com","_blank")
+      window.open("https://www.instagram.com/","_blank")
     }
-    if(command.includes("open YouTube")){
+    else if(command.includes("open YouTube")){
       const message = "Opening YouTube"
       setResponse(message)
       speak(message)
       window.open("https://www.youtube.com","_blank")
     }
-    if(command.includes("open Twitter")){
+    else if(command.includes("open Twitter")){
       const message = "Opening Twitter"
       setResponse(message)
       speak(message)
@@ -77,7 +77,7 @@ const App = () => {
   }
   return (
     <div className='w-screen h-screen bgimg flex flex-col gap-6 items-center justify-center'>
-      <h1 className='text-6xl font-extrabold text-green-50 mb-6'>AI Voice Assistant</h1>
+      <a href="https://github.com/tofikbagwangithub/AI-voice-assistance.git" target="_blank"><h1 className='text-6xl font-extrabold text-green-50 mb-6'>AI Voice Assistant</h1></a>
       <p className='text-md font-semibold text-white'>
         {commands?"Please give me a command": "Processing Your Commands"}
       </p>
